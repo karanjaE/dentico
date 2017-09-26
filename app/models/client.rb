@@ -4,4 +4,6 @@ class Client < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :phone_no, presence: true
   validates :gender, presence: true
+
+  has_many :appointments
 end
