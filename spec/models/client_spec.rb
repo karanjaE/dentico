@@ -21,5 +21,9 @@ RSpec.describe Client, type: :model do
     it { expect(client).to validate_presence_of(:phone_no) }
     it { expect(client).to validate_presence_of(:gender) }
   end
+
+  describe 'ActiveModel associations' do
+    it { expect(client).to have_many(:appointments) }
+  end
 end
 
