@@ -27,5 +27,6 @@ RSpec.describe Appointment, type: :model do
 
   describe 'ActiveModel associations' do
     it { expect(appointment).to belong_to(:client) }
+    it { expect(appointment).to have_one(:payment) }
   end
 end

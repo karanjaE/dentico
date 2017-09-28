@@ -6,4 +6,5 @@ class Client < ApplicationRecord
   validates :gender, presence: true
 
   has_many :appointments
+  has_many :payments
 end

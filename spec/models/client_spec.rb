@@ -24,6 +24,7 @@ RSpec.describe Client, type: :model do
 
   describe 'ActiveModel associations' do
     it { expect(client).to have_many(:appointments) }
+    it { expect(client).to have_many(:payments) }
   end
 end
 
