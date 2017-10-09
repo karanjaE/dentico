@@ -18,6 +18,7 @@ gem 'rubocop'
 gem 'annotate'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.beta'
+gem 'bootstrap-will_paginate'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -38,4 +39,3 @@ end
 group :test do
   gem 'rspec_junit_formatter'
 end
-

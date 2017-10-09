@@ -51,6 +51,8 @@ GEM
       autoprefixer-rails (>= 6.0.3)
       popper_js (~> 1.11.1)
       sass (>= 3.4.19)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (9.1.0)
     coderay (1.1.1)
@@ -212,6 +214,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.6)
 
 PLATFORMS
   ruby
@@ -220,6 +223,7 @@ DEPENDENCIES
   annotate
   bcrypt (~> 3.1.7)
   bootstrap (~> 4.0.0.beta)
+  bootstrap-will_paginate
   byebug
   factory_girl_rails
   faker
@@ -242,4 +246,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2

@@ -1,0 +1,34 @@
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Edit Client</h3>
+    </div>
+    <div class="modal-content pl-4 pr-4">
+      <%= form_for Client.find(params[:id]) do |f| %>
+        <div class="form-group ml-3 mr-4">
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name, class: 'form-control' %>
+        </div>
+        <div class="form-group ml-3 mr-4">
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name, class: 'form-control' %>
+        </div>
+        <div class="form-group ml-3 mr-4">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control' %>
+        </div>
+        <div class="form-group ml-3 mr-4">
+          <%= f.label :phone_no %>
+          <%= f.text_field :phone_no, class: 'form-control' %>
+        </div>
+        <div class="form-group ml-3 mr-4">
+          <%= f.label :gender %>
+          <%= f.select :gender do%>
+            <%= options_for_select([['Male', 'male'], ['Female', 'female']]) %>
+          <% end %>
+        </div>
+        <%= f.submit "Save", class: "btn btn-primary my-3 mx-4" %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: clients
+#
+#  id         :integer          not null, primary key
+#  first_name :string
+#  last_name  :string
+#  email      :string
+#  phone_no   :string
+#  gender     :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 RSpec.describe Client, type: :model do
   it 'has a valid factory' do
     expect(build(:client)).to be_valid

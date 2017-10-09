@@ -11,6 +11,9 @@
   </head>
 
   <body class="d-flex flex-column justify-content-start">
-    <%= yield %>
+    <%= render  partial: "layouts/navbar" %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
   </body>
 </html>
